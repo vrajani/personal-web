@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/tabs.css" />
+
+    <!-- Js -->
+    <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.0/stitch.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body onLoad="displayContentsOnLoad()">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- header Nav Start -->
+                <nav class="navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand">
+                            <img src="img/profile-logo.png" alt="Logo" />
+                        </a>
+                        <a class="navbar-nav">
+                            Vishal Rajani
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header><!-- header close -->
+<button class="tablink" onclick="openPage('Summary', this, 'orange')" id="defaultOpen">Summary</button>
+<button class="tablink" onclick="openPage('Skills', this, 'orange')">Skills</button>
+<button class="tablink" onclick="openPage('Education', this, 'orange')">Education</button>
+<button class="tablink" onclick="openPage('Projects', this, 'orange')">Projects</button>
+<button class="tablink" onclick="openPage('Experience', this, 'orange')">Experience</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+<div id="Summary" class="tabcontent">
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h2>It is not the ship so much as the skillful sailing that assures the prosperous voyage.</h2>
+                        <h5>     George William Curtis	</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="Skills" class="tabcontent">
+   <h2>Languages</h2>
+    <p>Java, C/C++, Groovy, Java Script/node.js, HTML/CSS, Go</p>
+    <h2>Software Technologies</h2>
+    <p>Spring ( MVC, Boot, Batch), Amazon Cloud (AWS), Hibernate JPA, REST / SOAP, JOOQ, Rabbit Queue</p>
+    <h2>DataBase Experience</h2>
+    <p>Mongo, MySQL, REDIS, DynamoDB</p>
+    <h2>Tools</h2>
+    <h4>Coding Tools:</h4><p> Maven, Source Tree, Github, Third Party Tools: Pager Duty, Sumo Logic, New Relic</p>
+    <h4>Database Tools:</h4><p> Mongo Chef, Squirrel, IDE's Tools: Intellij, Eclipse, Visual Studio</p>
+
+</div>
+
+<div id="Education" class="tabcontent">
+    <h3>Education</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Projects" class="tabcontent">
+
+</div>
+
+<div id="Experience" class="tabcontent">
+    <div class="container">
+        <div class="row">
+            <hr/>
+            <div class="block">
+                <h2>Java Developer, Dealer Dot Com Inc., Burlington, Vermont, United States</h2>
+                <h2>Aug, 2015 - Current</h2>
+                <h5>- Worked in an Agile environment with team of 6 people with different set of skills.</h5>
+                <h5>- Worked to create solution for clients based on custom requirements in a set of complex, intertwined set of systems.</h5>
+                <h5>- Worked mainly on Java, with other set of supporting java technologies.</h5>
+                <h5>- Worked with a wide set of new technology like Spring, Hibernate, REST, etc.</h5>
+                <h5>- Migrated an existing real time, complex system to Amazon Cloud with a whole new designed architecture.</h5>
+                <h5>- Worked on real time and scheduled system types.</h5>
+            </div>
+            <hr/>
+            <div class="block">
+                <h2>Java Developer Intern, Innovative Routines International (IRI), Inc. , Melbourne, Florida, United States</h2>
+                <h2>Jan, 2015 - May,2015</h2>
+                <h5>- Developed java SDK to create a usable library giving easy access to the user applications.</h5>
+                <h5>- Worked on Java Native Interface (JNI) to extend existing functionalities such as Big Data security and data encryption.</h5>
+                <h5>- Extend the utility of C++ codes into Java environment. Also worked on C# for the same library.</h5>
+                <h5>- Encryption using 3DES, Format Preserved - ASCII data and Format Preserved - Alphanum data.</h5>
+                <h5>- Developed the DOTNET -SDK for String Masking and String Formatting. Developed Java SDK for the very same.</h5>
+            </div>
+            <hr/>
+            <div class="block">
+                <h2>Java Web Developer Internship, Netboss Technologies, Sebastian, Florida, United States</h2>
+                <h2>May, 2014 - December, 2014</h2>
+                <h5>- Developed a Web Application for Individual Device Administrator Application, completely in Spring MVC Framework.</h5>
+                <h5>- Developed project in RESTFUL structure. Model and Controller completely in Core Java.</h5>
+                <h5>- Worked with tools: Source Tree, Eclipse, GIT-HUB, MAVEN and Tomcat Server.</h5>
+                <h5>- Worked in Languages like Core Java as Back-End, JSP, HTML/CSS and JQuery for Front-End support.</h5>
+                <h5>- Worked in Core Java with XML and JSON data file.</h5>
+            </div>
+            <hr/>
+            <div class="block">
+                <h2>Intern, India Soft Technologies, Rajkot, Gujarat, India</h2>
+                <h2>June,2012-May,2013</h2>
+                <h5>- Received professional training in Designing and Maintaining Social Web Portal.</h5>
+                <h5>- Worked in the languages like, HTML/CSS, PHP, javaScript and SQL server.</h5>
+                <h5>- Worked with tool: Dreamweaver, My SQL</h5>
+            </div>
+            <hr/>
+        </div>
+    </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h3>Contact Me</h3>
+    <p>Who we are and what we do.</p>
+</div>
+<script>
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
