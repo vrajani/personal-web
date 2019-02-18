@@ -14,7 +14,7 @@
     <script src="js/main.js"></script>
     <script src="js/slideshow.js"></script>
 </head>
-<body onLoad="displayContentsOnLoad()">
+<body>
 <header>
     <div class="container">
         <div class="row">
@@ -289,16 +289,65 @@
 <div id="Contact" class="tabcontent">
     <h3>Contact Me</h3>
     <hr>
-    <ul class="address-block">
-        <li>
-            Email:   vrajani12@yahoo.com
-        </li>
-        <li>
-            Phone: +1 (321) 961-5956
-        </li>
-    </ul>
+
+    <table>
+        <tr>
+            <td>Email</td>
+            <td>vishalrajani45@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>+1 (321)-961-5956</td>
+        </tr>
+        <tr>
+            <td>LinkedIn</td>
+            <td>https://www.linkedin.com/in/vrajani12/</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>Dallas, Texas, USA</td>
+        </tr>
+
+    </table>
+    <br><br>
+    <table border="0px" style="border: 0px">
+        <tr>
+            <td>Contact me here: </td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input id="first_name"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input id="last_name"></td>
+        </tr>
+        <tr>
+            <td>Company Name</td>
+            <td><input id="company_name"></td>
+        </tr>
+        <tr>
+            <td>Your Contact Email</td>
+            <td><input id="contact_email"></td>
+        </tr>
+        <tr>
+            <td>Your Contact Phone</td>
+            <td><input id="contact_phone"></td>
+        </tr>
+        <tr>
+            <td>Reason for contacting</td>
+            <td><input id="reason"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" onClick="addContact()"></td>
+        </tr>
+        <tr>
+            <td><div id="confirmation"></div></td>
+        </tr>
+    </table>
 
 </div>
+
 <script>
     function openPage(pageName,elmnt,color) {
         var i, tabcontent, tablinks;
