@@ -5,14 +5,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/tabs.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
 
     <!-- Js -->
     <script src="https://s3.amazonaws.com/stitch-sdks/js/bundles/4.0.0/stitch.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/slideshow.js"></script>
 </head>
 <body onLoad="displayContentsOnLoad()">
 <header>
@@ -43,7 +43,10 @@
 <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
 
 <div id="Summary" class="tabcontent">
-    <section id="call-to-action">
+    <div>
+
+    </div>
+    <section class="call-to-action">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -58,92 +61,227 @@
 </div>
 
 <div id="Skills" class="tabcontent">
-   <h2>Languages</h2>
-    <p>Java, C/C++, Groovy, Java Script/node.js, HTML/CSS, Go</p>
-    <h2>Software Technologies</h2>
-    <p>Spring ( MVC, Boot, Batch), Amazon Cloud (AWS), Hibernate JPA, REST / SOAP, JOOQ, Rabbit Queue</p>
-    <h2>DataBase Experience</h2>
-    <p>Mongo, MySQL, REDIS, DynamoDB</p>
-    <h2>Tools</h2>
-    <h4>Coding Tools:</h4><p> Maven, Source Tree, Github, Third Party Tools: Pager Duty, Sumo Logic, New Relic</p>
-    <h4>Database Tools:</h4><p> Mongo Chef, Squirrel, IDE's Tools: Intellij, Eclipse, Visual Studio</p>
+   <table>
+    <tr>
+        <td>Proficient at Languages</td>
+        <td>Java, Groovy</td>
+    </tr>
+    <tr>
+        <td>Other Languages and Frameworks</td>
+        <td>Java script, Thrift, C, C++, Node.js, JQuery, Docker, Terraform</td>
+    </tr>
+    <tr>
+        <td>Databases and Data Tools</td>
+        <td>MySQL , NoSQL (Mongo, , Dynamo DB), SOLR, JOOQ</td>
+    </tr>
+    <tr>
+        <td>Framework and Web-services</td>
+        <td>Spring, Spring Boot, Spring Batch, Spring-web, Hibernate/JPA, REST, SOAP, Java Native Interface, Dockers, Hystrix</td>
+    </tr>
+    <tr>
+        <td>Tools</td>
+        <td>Rabbit MQ, Maven, Jenkins, Git, JIRA, Sumo Logic, New Relic, Pager Duty</td>
+    </tr>
+    <tr>
+        <td>Testing Tools and Techniques</td>
+        <td>Junit, PowerMock, Selenium, Test-Driven Development (TDD)</td>
+    </tr>
+    <tr>
+        <td>Platforms</td>
+        <td>Cloud - Amazon Web Service (AWS), Microservice architecture, Service Oriented Architecture(SOA), Infrastructure As A Code</td>
+    </tr>
+    <tr>
+        <td>Software Methodologies</td>
+        <td>Agile Methodology, Waterfall (for a short time)</td>
+    </tr>
+    <tr>
+        <td>Personal Traits</td>
+        <td>Quick learner, well-organized, team player, motivated</td>
+    </tr>
+    <tr>
+        <td>OS</td>
+        <td>Unix/Linux, Windows, Mac OS</td>
+    </tr>
+    <tr>
+        <td>Scripting</td>
+        <td>Bash , groovy</td>
+    </tr>
+    </table>
 
 </div>
-
 <div id="Education" class="tabcontent">
-    <h4>Bachelors of Engineering (B.E.), Information Technology</h4>
-    <p>Gujarat Technological University , Rajkot, Gujarat, India</p>
-    <p>August 2009 - May 2013</p>
-    <p>7.25/10 GPA</p>
+    <table border="none" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <h4>Bachelors of Engineering (B.E.), Information Technology</h4>
+                <p>Gujarat Technological University , Rajkot, Gujarat, India</p>
+                <p>August 2009 - May 2013</p>
+                <p>7.25/10 GPA</p>
+            </td>
+            <td><a> <img height="250px" src="img/gtu.jpg"></a></td>
+        </tr>
+        <tr>
+            <td>
+                <h4>M.S. Computer Science</h4>
+                <p>Florida Institute of Technology, Melbourne, FL, United States</p>
+                <p>August 2013 - May 2015</p>
+                <p>3.27/4 GPA</p>
+            </td>
+            <td><a> <img height="250px" src="img/fit.png"></a></td>
+        </tr>
+    </table>
     <br>
-    <h4>M.S. Computer Science</h4>
-    <p>Florida Institute of Technology, Melbourne, FL, United States</p>
-    <p>August 2013 - May 2015</p>
-    <p>3.27/4 GPA</p>
+
 </div>
 
 <div id="Projects" class="tabcontent">
-    <div class="position-center">
-        <h2>Migrating Existing real time Lead System to AWS.</h2>
-        <p>Worked on architecting the whole system in order to mitigate some of the shortcomings in the existing system.</p>
-        <p>Project Lasted over 3 Months</p>
-        <p>Worked on Amazon tools like AWS config, Lambda, EC2, Dynamo DB, S3, Streams, SNS, SQS, REDIS, Elasticache, etc.</p>
+    <div class="slideshow-container">
+
+        <div class="mySlides" style="display: block">
+            <div>
+                <h2>Lead the Project to re-architect orthodox monolithic system to micro-service serverless architecture in AWS</h2>
+                <p>Went through widely accepted software development process of idea definition to research to design review to
+                    planning to implementation</p>
+                <p>Architected existing monolithic system into independent micro-service to have them work independently</p>
+                <p>Worked on AWS services like API gateway, Dynamo DB, Elastic Load Balancer, Lambda, EC2, etc.</p>
+                <p>Worked on creating Jenkins build pipeline from scratch and real-time alerting with Sumo Logic log tool</p>
+                <p>Implemented data back-up process to recover data in any unexpected events</p>
+            </div>
+            <br><br>
+            <div class="text">1 / 5</div>
+
+        </div>
+
+        <div class="mySlides">
+            <div>
+                <h2>Developed a New Real Time Inventory Syncing System</h2>
+                <p>Developed a new real-time inventory syncing system with supporting technologies like Rabbit queue, etc.</p>
+                <p>The whole system was build in Spring Boot Framework and consists of three different Apps</p>
+                <p>This system was built real time and attached with Pager Duty for real time visibility in the system</p>
+                <p>Wrote extensive Unit test cases in Spring Boot 1.4. Used third party tools like Sumo logic, New Relic, Pager Duty, etc.</p>
+            </div>
+            <br><br>
+            <div class="text">2 / 5</div>
+        </div>
+
+        <div class="mySlides">
+            <div>
+                <h2>Developed a Scheduled Spring Batch App for Reporting</h2>
+                <p>Created an application in the Spring Batch framework and cron scheduler to generate timed responses.</p>
+                <p>Worked on Querying Mongo and MySql Databases. Worked with different Querying languages including JOOQ to work with creating a set of desired reports.</p>
+                <p>Worked with creating customized input to the reports making it more extensible.</p>
+                <p>Used third party tool Sumo logic to create visibility.</p>
+            </div>
+            <br><br>
+            <div class="text">3 / 5</div>
+        </div>
+
+        <div class="mySlides">
+            <div>
+                <h2>Research Migrating Existing real time Lead System to AWS.</h2>
+                <p>Did Extensive Research for migrating existing real time, complex and high traffic system to Amazon Cloud.</p>
+                <p>Worked on architecting the system in order to mitigate some of the shortcomings in the existing system.</p>
+                <p>The project lasted 3 months with extensive research on Amazon cloud tools and features and adapt to the existing system without the loss of any data since it was real time.</p>
+                <p>Worked on Amazon tools like AWS Lambda, EC2, Dynamo DB, S3, Streams, SQS, REDIS, Elasticache, etc.</p>
+            </div>
+            <br><br>
+            <div class="text">4 / 5</div>
+        </div>
+
+        <div class="mySlides">
+            <div>
+                <h2>Developed an Integration Automated Test Suite Framework</h2>
+                <p>Developed integration Automated Test suite for testing the integration across 3 giant monolithic applications.</p>
+                <p>Worked with Selenium to perform web task as a user.</p>
+            </div>
+            <br><br>
+            <div class="text">5 / 5</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
-    <div class="position-center">
-        <h2>Created a Scheduled Spring Batch App for Reporting.</h2>
-        <p>Worked with different Quering languages (SQL, JOOQ) to work with creating a set of desired reports.</p>
-        <p>Used third party tool Sumo logic to create visibility. Lasted over 3 Months</p>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
-    <div class="position-center">
-        <h2>Created a New Real Time Inventory Syncing System</h2>
-        <p>The whole system was build in Spring Boot Framework with supporting technologies like Rabbit queue, etc. </p>
-        <p>Wrote extensive Unit test cases in Spring Boot 1.4.</p>
-        <p>Used third party tools like Sumo logic, New Relic, Pager Duty, etc.</p>
-    </div>
+
 </div>
 
 <div id="Experience" class="tabcontent">
 
-    <hr/>
-    <div class="block">
-        <h2>Java Developer, Dealer Dot Com Inc., Burlington, Vermont, United States</h2>
-        <h2>Aug, 2015 - Current</h2>
-        <h5>- Worked in an Agile environment with team of 6 people with different set of skills.</h5>
-        <h5>- Worked to create solution for clients based on custom requirements in a set of complex, intertwined set of systems.</h5>
-        <h5>- Worked mainly on Java, with other set of supporting java technologies.</h5>
-        <h5>- Worked with a wide set of new technology like Spring, Hibernate, REST, etc.</h5>
-        <h5>- Migrated an existing real time, complex system to Amazon Cloud with a whole new designed architecture.</h5>
-        <h5>- Worked on real time and scheduled system types.</h5>
+    <div class="slideshow-container">
+
+        <div class="mySlides1" style="display: block">
+            <div class="block">
+                <h2>Java Developer, Dealer Dot Com Inc., Burlington, Vermont, United States</h2>
+                <h2>Aug, 2015 - Current</h2>
+                <h5>- Worked in an Agile environment with team of 6 people with different set of skills.</h5>
+                <h5>- Worked to create solution for clients based on custom requirements in a set of complex, intertwined set of systems.</h5>
+                <h5>- Worked mainly on Java, with other set of supporting java technologies.</h5>
+                <h5>- Worked with a wide set of new technology like Spring, Hibernate, REST, etc.</h5>
+                <h5>- Migrated an existing real time, complex system to Amazon Cloud with a whole new designed architecture.</h5>
+                <h5>- Worked on real time and scheduled system types.</h5>
+            </div>
+            <br><br>
+            <div class="text">1 / 4</div>
+        </div>
+        <div class="mySlides1">
+
+            <div class="block">
+                <h2>Java Developer Intern, Innovative Routines International (IRI), Inc. , Melbourne, Florida, United States</h2>
+                <h2>Jan, 2015 - May,2015</h2>
+                <h5>- Developed java SDK to create a usable library giving easy access to the user applications.</h5>
+                <h5>- Worked on Java Native Interface (JNI) to extend existing functionalities such as Big Data security and data encryption.</h5>
+                <h5>- Extend the utility of C++ codes into Java environment. Also worked on C# for the same library.</h5>
+                <h5>- Encryption using 3DES, Format Preserved - ASCII data and Format Preserved - Alphanum data.</h5>
+                <h5>- Developed the DOTNET -SDK for String Masking and String Formatting. Developed Java SDK for the very same.</h5>
+            </div>
+            <br><br>
+            <div class="text">2 / 4</div>
+        </div>
+        <div class="mySlides1">
+            <div class="block">
+                <h2>Java Web Developer Internship, Netboss Technologies, Sebastian, Florida, United States</h2>
+                <h2>May, 2014 - December, 2014</h2>
+                <h5>- Developed a Web Application for Individual Device Administrator Application, completely in Spring MVC Framework.</h5>
+                <h5>- Developed project in RESTFUL structure. Model and Controller completely in Core Java.</h5>
+                <h5>- Worked with tools: Source Tree, Eclipse, GIT-HUB, MAVEN and Tomcat Server.</h5>
+                <h5>- Worked in Languages like Core Java as Back-End, JSP, HTML/CSS and JQuery for Front-End support.</h5>
+                <h5>- Worked in Core Java with XML and JSON data file.</h5>
+            </div>
+            <br><br>
+            <div class="text">3 / 4</div>
+        </div>
+        <div class="mySlides1">
+            <div class="block">
+                <h2>Intern, India Soft Technologies, Rajkot, Gujarat, India</h2>
+                <h2>June,2012-May,2013</h2>
+                <h5>- Received professional training in Designing and Maintaining Social Web Portal.</h5>
+                <h5>- Worked in the languages like, HTML/CSS, PHP, javaScript and SQL server.</h5>
+                <h5>- Worked with tool: Dreamweaver, My SQL</h5>
+            </div>
+            <br><br>
+            <div class="text">4 / 4</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+
     </div>
-    <hr/>
-    <div class="block">
-        <h2>Java Developer Intern, Innovative Routines International (IRI), Inc. , Melbourne, Florida, United States</h2>
-        <h2>Jan, 2015 - May,2015</h2>
-        <h5>- Developed java SDK to create a usable library giving easy access to the user applications.</h5>
-        <h5>- Worked on Java Native Interface (JNI) to extend existing functionalities such as Big Data security and data encryption.</h5>
-        <h5>- Extend the utility of C++ codes into Java environment. Also worked on C# for the same library.</h5>
-        <h5>- Encryption using 3DES, Format Preserved - ASCII data and Format Preserved - Alphanum data.</h5>
-        <h5>- Developed the DOTNET -SDK for String Masking and String Formatting. Developed Java SDK for the very same.</h5>
+
+    <div style="text-align:center">
+        <span class="dot1" onclick="currentSlide1(1)"></span>
+        <span class="dot1" onclick="currentSlide1(2)"></span>
+        <span class="dot1" onclick="currentSlide1(3)"></span>
+        <span class="dot1" onclick="currentSlide1(4)"></span>
     </div>
-    <hr/>
-    <div class="block">
-        <h2>Java Web Developer Internship, Netboss Technologies, Sebastian, Florida, United States</h2>
-        <h2>May, 2014 - December, 2014</h2>
-        <h5>- Developed a Web Application for Individual Device Administrator Application, completely in Spring MVC Framework.</h5>
-        <h5>- Developed project in RESTFUL structure. Model and Controller completely in Core Java.</h5>
-        <h5>- Worked with tools: Source Tree, Eclipse, GIT-HUB, MAVEN and Tomcat Server.</h5>
-        <h5>- Worked in Languages like Core Java as Back-End, JSP, HTML/CSS and JQuery for Front-End support.</h5>
-        <h5>- Worked in Core Java with XML and JSON data file.</h5>
-    </div>
-    <hr/>
-    <div class="block">
-        <h2>Intern, India Soft Technologies, Rajkot, Gujarat, India</h2>
-        <h2>June,2012-May,2013</h2>
-        <h5>- Received professional training in Designing and Maintaining Social Web Portal.</h5>
-        <h5>- Worked in the languages like, HTML/CSS, PHP, javaScript and SQL server.</h5>
-        <h5>- Worked with tool: Dreamweaver, My SQL</h5>
-    </div>
-    <hr/>
 </div>
 
 <div id="Contact" class="tabcontent">
@@ -179,10 +317,16 @@
 </script>
 
 <footer id="footer">
-
-            <div class="col-md-12">
-                <p>Have A Beautiful Rest Of the Day.</p>
+    <section class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                </div>
             </div>
+        </div>
+        </div>
+    </section>
 </footer>
 </body>
 </html>

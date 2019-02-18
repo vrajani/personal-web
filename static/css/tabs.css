@@ -25,14 +25,38 @@ height: 100%;
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
     color: black;
-    display: none;
+    /*display: none;*/
     padding: 100px 20px;
+    overflow-scrolling: auto;
     height: 100%;
 }
 
-#Summary {background-color: lightgray;}
-#Skills {background-color: lightgray;}
-#Education {background-color: lightgray;}
-#Projects {background-color: lightgray;}
-#Experience {background-color: lightgray;}
-#Contact {background-color: lightgray;}
+#Summary {
+    background-color: lightgray;
+    height: auto;
+}
+
+#Skills {
+    background-color: lightgray;
+    height: auto;
+}
+
+#Education {
+    background-color: lightgray;
+    height: auto;
+}
+
+#Projects {
+    background-color: lightgray;
+    height: auto;
+}
+
+#Experience {
+    background-color: lightgray;
+    height: auto;
+}
+
+#Contact {
+    background-color: lightgray;
+    height: auto;
+}
