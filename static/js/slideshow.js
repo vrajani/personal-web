@@ -1,3 +1,4 @@
+var slideIndex1 = 1;
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,7 +29,6 @@ function showSlides(n) {
 
 // Experience Slideshow
 
-var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
 function plusSlides1(n) {
